@@ -1,0 +1,8 @@
+rootProject.name = "To Do Tracking"
+
+// product Module
+include ':app'
+
+// CORE MODULE
+
+// TEST MODULE
