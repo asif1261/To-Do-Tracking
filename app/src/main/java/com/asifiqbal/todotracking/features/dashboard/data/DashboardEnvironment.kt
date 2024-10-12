@@ -28,8 +28,6 @@ class DashboardEnvironment @Inject constructor(
     override fun getUser(): Flow<User> {
         return userProvider.getUser()
     }
-
-    // TODO e2e
     override fun listenToDoTaskDiff(): Flow<ToDoTaskDiff> {
         var tasks: Map<String, ToDoTask> = mapOf()
         return toDoTaskProvider.getScheduledTasks()

@@ -13,8 +13,6 @@ import javax.inject.Singleton
 class TaskReminderViewModel @Inject constructor(
     private val environment: ITaskReminderEnvironment,
 ) {
-
-    // TODO e2e
     fun dispatch(action: TaskReminderAction) {
         when (action) {
             is TaskReminderAction.AlarmShow -> {
