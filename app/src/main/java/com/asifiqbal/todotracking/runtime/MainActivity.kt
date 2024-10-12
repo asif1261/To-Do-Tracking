@@ -3,46 +3,33 @@ package com.asifiqbal.todotracking.runtime
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.asifiqbal.todotracking.ui.theme.ToDoTrackingTheme
+import androidx.core.view.WindowCompat
+import com.asifiqbal.todotracking.features.host.ui.Host
+import com.asifiqbal.todotracking.foundation.window.WindowState
+import com.asifiqbal.todotracking.foundation.window.rememberWindowState
+import com.asifiqbal.todotracking.runtime.navigation.MainNavHost
+import com.wisnu.kurniawan.composetodolist.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+    private lateinit var windowState: WindowState
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Theme_ToDoTracking_Light)
         super.onCreate(savedInstanceState)
+
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+
         setContent {
-            ToDoTrackingTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
+            windowState = rememberWindowState()
+
+            Host {
+                Surface{
+                    MainNavHost(windowState)
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    ToDoTrackingTheme {
-        Greeting("Android")
     }
 }

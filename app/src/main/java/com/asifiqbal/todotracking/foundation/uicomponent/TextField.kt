@@ -43,7 +43,6 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import com.asifiqbal.todotracking.foundation.theme.AlphaDisabled
 import com.wisnu.kurniawan.composetodolist.R
-import com.wisnu.kurniawan.composetodolist.foundation.uicomponent.PgModalTitle
 
 const val MAX_TEXT_FIELD_CHARACTER = 255
 

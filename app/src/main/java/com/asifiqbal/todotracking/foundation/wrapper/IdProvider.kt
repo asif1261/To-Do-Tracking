@@ -1,6 +1,6 @@
 package com.asifiqbal.todotracking.foundation.wrapper
 
-import java.util.*
+import java.util.UUID
 
 interface IdProvider {
     fun generate(): String

@@ -1,10 +1,9 @@
-/*
 package com.asifiqbal.todotracking.foundation.extension
 
-import com.wisnu.kurniawan.composetodolist.features.todo.all.ui.ItemAllState
-import com.wisnu.kurniawan.composetodolist.features.todo.detail.ui.ToDoTaskItem
-import com.wisnu.kurniawan.composetodolist.features.todo.main.ui.ItemMainState
-import com.wisnu.kurniawan.composetodolist.features.todo.scheduled.ui.ItemScheduledState
+import com.asifiqbal.todotracking.features.todo.all.ui.ItemAllState
+import com.asifiqbal.todotracking.features.todo.detail.ui.ToDoTaskItem
+import com.asifiqbal.todotracking.features.todo.main.ui.ItemMainState
+import com.asifiqbal.todotracking.features.todo.scheduled.ui.ItemScheduledState
 
 fun ToDoTaskItem.identifier() = when (this) {
     is ToDoTaskItem.CompleteHeader -> id
@@ -29,4 +28,3 @@ fun ItemMainState.identifier() = when (this) {
     is ItemMainState.ItemListType -> list.id
 }
 
-*/
