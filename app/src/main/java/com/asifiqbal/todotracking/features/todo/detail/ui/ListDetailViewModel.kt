@@ -66,7 +66,7 @@ class ListDetailViewModel @Inject constructor(
             }
             is ListDetailAction.ListAction.Create -> {
                 viewModelScope.launch {
-                    environment.trackSaveListButtonClicked()
+                    //environment.trackSaveListButtonClicked()
                     environment.createList(
                         state.value.list.copy(
                             id = environment.idProvider.generate(),

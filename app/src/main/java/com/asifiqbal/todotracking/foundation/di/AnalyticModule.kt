@@ -13,10 +13,10 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object AnalyticModule {
 
-    @Singleton
+    /*@Singleton
     @Provides
     fun provideGoogleAnalytic(): FirebaseAnalytics {
         return Firebase.analytics
-    }
+    }*/
 
 }

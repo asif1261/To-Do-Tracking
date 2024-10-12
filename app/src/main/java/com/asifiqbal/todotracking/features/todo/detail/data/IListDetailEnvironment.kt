@@ -16,5 +16,5 @@ interface IListDetailEnvironment {
     suspend fun toggleTaskStatus(toDoTask: ToDoTask)
     suspend fun deleteTask(task: ToDoTask)
 
-    fun trackSaveListButtonClicked()
+    //fun trackSaveListButtonClicked()
 }

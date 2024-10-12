@@ -11,8 +11,6 @@ import com.asifiqbal.todotracking.foundation.wrapper.DateTimeProvider
 import com.asifiqbal.todotracking.foundation.wrapper.IdProvider
 import com.asifiqbal.todotracking.model.ToDoList
 import com.asifiqbal.todotracking.model.ToDoTask
-import com.google.firebase.analytics.FirebaseAnalytics
-import com.wisnu.foundation.libanalyticsmanager.AnalyticsManager
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flatMapConcat
@@ -23,8 +21,7 @@ class ListDetailEnvironment @Inject constructor(
     private val toDoListProvider: ToDoListProvider,
     private val toDoTaskProvider: ToDoTaskProvider,
     override val idProvider: IdProvider,
-    override val dateTimeProvider: DateTimeProvider,
-    private val analyticManager: AnalyticsManager
+    override val dateTimeProvider: DateTimeProvider
 ) : IListDetailEnvironment {
 
     override fun getListWithTasksById(listId: String): Flow<ToDoList> {
@@ -91,7 +88,7 @@ class ListDetailEnvironment @Inject constructor(
         toDoTaskProvider.deleteTaskById(task.id)
     }
 
-    override fun trackSaveListButtonClicked() {
+    /*override fun trackSaveListButtonClicked() {
         analyticManager.trackEvent(
             FirebaseAnalytics.Event.SELECT_CONTENT,
             mapOf(
@@ -99,6 +96,6 @@ class ListDetailEnvironment @Inject constructor(
                 FirebaseAnalytics.Param.ITEM_NAME to "button_save_list",
             ),
         )
-    }
+    }*/
 
 }

@@ -1,8 +1,8 @@
 package com.asifiqbal.todotracking.runtime
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.material3.Surface
 import androidx.core.view.WindowCompat
 import com.asifiqbal.todotracking.features.host.ui.Host
@@ -13,7 +13,7 @@ import com.wisnu.kurniawan.composetodolist.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     private lateinit var windowState: WindowState
 
     override fun onCreate(savedInstanceState: Bundle?) {
