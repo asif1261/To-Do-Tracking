@@ -4,5 +4,4 @@ package com.wisnu.kurniawan.composetodolist.foundation.datasource.preference.mod
 
 enum LanguagePreference {
   ENGLISH = 0;
-  INDONESIA = 1;
 }
