@@ -1,4 +1,3 @@
-/*
 package com.asifiqbal.todotracking.sensortracking
 
 import android.os.Build
@@ -9,7 +8,6 @@ import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import com.github.mikephil.charting.charts.LineChart
@@ -22,6 +20,7 @@ import com.github.mikephil.charting.data.LineDataSet
 @RequiresApi(Build.VERSION_CODES.M)
 @Composable
 fun SensorTrackingApp(viewModel: SensorViewModel) {
+
     val gyroData by viewModel.gyroData.collectAsState()
     val accelerometerData by viewModel.accelerometerData.collectAsState()
     val alert by viewModel.alert.collectAsState()
@@ -58,7 +57,8 @@ fun SensorTrackingApp(viewModel: SensorViewModel) {
 
 @Composable
 fun GraphDisplay(data: List<Float>) {
-    val chart = rememberLineChart()
+    val context = LocalContext.current
+    val chart = rememberLineChart(context)
 
     chart.data = LineData(LineDataSet(data.mapIndexed { index, value ->
         Entry(index.toFloat(), value)
@@ -71,10 +71,12 @@ fun GraphDisplay(data: List<Float>) {
 }
 
 @Composable
-fun rememberLineChart(): LineChart {
+fun rememberLineChart(
+    context: android.content.Context
+): LineChart {
     return remember {
-        val chart = LineChart(LocalContext.current)
+        val chart = LineChart(context)
         chart.description = Description().apply { text = "" }
         chart
     }
-}*/
+}

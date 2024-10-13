@@ -10,7 +10,10 @@ import javax.inject.Inject
 @HiltViewModel
 class SplashViewModel @Inject constructor(
     splashEnvironment: ISplashEnvironment
-) : StatefulViewModel<Unit, SplashEffect, SplashAction, ISplashEnvironment>(Unit, splashEnvironment) {
+) : StatefulViewModel<Unit, SplashEffect, SplashAction, ISplashEnvironment>(
+    Unit,
+    splashEnvironment
+) {
 
     init {
         dispatch(SplashAction.AppLaunch)
@@ -22,11 +25,7 @@ class SplashViewModel @Inject constructor(
                 viewModelScope.launch {
                     environment.getCredential()
                         .collect {
-                            // if (it.isLoggedIn()) {
-                                setEffect(SplashEffect.NavigateToDashboard)
-//                            } else {
-//                                setEffect(SplashEffect.NavigateToLogin)
-//                            }
+                            setEffect(SplashEffect.NavigateToDashboard)
                         }
                 }
             }
