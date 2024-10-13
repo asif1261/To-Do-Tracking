@@ -45,7 +45,7 @@ import com.asifiqbal.todotracking.foundation.uicomponent.PgSecondaryButton
 import com.asifiqbal.todotracking.foundation.uicomponent.PgTextField
 import com.asifiqbal.todotracking.foundation.viewmodel.HandleEffect
 import com.asifiqbal.todotracking.model.ToDoTask
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 
 @Composable
 fun ListDetailScreen(

@@ -6,7 +6,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 
 private val Sans = FontFamily(
     Font(R.font.sans_light, FontWeight.Light),

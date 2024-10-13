@@ -11,7 +11,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.asifiqbal.todotracking.foundation.uicomponent.PgToDoCreator
 import com.asifiqbal.todotracking.foundation.uiextension.requestFocusImeAware
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 import kotlinx.coroutines.launch
 
 @Composable

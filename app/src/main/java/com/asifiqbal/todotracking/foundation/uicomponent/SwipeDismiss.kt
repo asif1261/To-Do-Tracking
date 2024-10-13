@@ -46,7 +46,7 @@ import com.asifiqbal.todotracking.foundation.uiextension.guide
 import com.asifiqbal.todotracking.foundation.uiextension.guide2
 import com.asifiqbal.todotracking.foundation.uiextension.lerp
 import com.asifiqbal.todotracking.foundation.uiextension.onPositionInParentChanged
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlin.math.absoluteValue

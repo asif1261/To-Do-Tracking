@@ -51,7 +51,7 @@ import com.asifiqbal.todotracking.foundation.uicomponent.PgPageLayout
 import com.asifiqbal.todotracking.foundation.uicomponent.PgToDoItemCell
 import com.asifiqbal.todotracking.foundation.uicomponent.itemInfoDisplayable
 import com.asifiqbal.todotracking.model.ToDoTask
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

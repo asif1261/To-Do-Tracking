@@ -54,7 +54,7 @@ import com.asifiqbal.todotracking.foundation.uicomponent.PgEmpty
 import com.asifiqbal.todotracking.foundation.uicomponent.PgIcon
 import com.asifiqbal.todotracking.foundation.uicomponent.PgIconButton
 import com.asifiqbal.todotracking.foundation.uicomponent.SwipeDismiss
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 
 @Composable
 fun ToDoMainScreen(

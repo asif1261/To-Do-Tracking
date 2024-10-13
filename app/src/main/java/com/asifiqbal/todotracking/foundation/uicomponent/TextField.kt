@@ -42,7 +42,7 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import com.asifiqbal.todotracking.foundation.theme.AlphaDisabled
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 
 const val MAX_TEXT_FIELD_CHARACTER = 255
 

@@ -52,7 +52,7 @@ import com.asifiqbal.todotracking.foundation.uicomponent.PgIconButton
 import com.asifiqbal.todotracking.foundation.uicomponent.SwipeDismiss
 import com.asifiqbal.todotracking.foundation.wrapper.IdProviderImpl
 import com.wisnu.foundation.coreloggr.Loggr
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

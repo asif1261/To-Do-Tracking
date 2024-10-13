@@ -7,10 +7,6 @@ plugins {
     id 'dagger.hilt.android.plugin'
 }
 
-//id 'com.google.gms.google-services'
-//id 'com.google.firebase.crashlytics'
-//id 'com.google.firebase.firebase-perf'
-
 apply from: "$rootDir/gradle/test-report.gradle"
 
 ext.codeCoverage = [
@@ -18,21 +14,16 @@ ext.codeCoverage = [
         fileBlackList: [
         ],
         fileWhiteList: [
-                // UI
                 '**/ui/*ViewModel*',
                 '**/ui/*State*',
-                // Data
-                // '**/data/*Environment*',
                 '**/foundation/datasource/local/*Read*',
                 '**/foundation/datasource/local/*Write*',
-                // '**/foundation/datasource/preference/PreferenceManager*',
-                // Core
                 '**/foundation/extension/*',
         ]
 ]
 
 android {
-    namespace 'com.wisnu.kurniawan.composetodolist'
+    namespace 'com.asifiqbal.todotracking'
 
     compileSdkVersion project.ext.compileSdkVersion
     buildToolsVersion project.ext.buildToolsVersion

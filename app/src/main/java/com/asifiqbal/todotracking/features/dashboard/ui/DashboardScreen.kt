@@ -54,7 +54,7 @@ import com.asifiqbal.todotracking.foundation.uicomponent.SwipeSearch
 import com.asifiqbal.todotracking.foundation.uicomponent.SwipeSearchValue
 import com.asifiqbal.todotracking.foundation.uicomponent.rememberSwipeSearchState
 import com.asifiqbal.todotracking.model.ToDoTask
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 
 @Composable
 fun DashboardScreen(

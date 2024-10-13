@@ -1,7 +1,7 @@
 package com.asifiqbal.todotracking.features.setting.ui
 
 import androidx.compose.runtime.Immutable
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 
 @Immutable
 data class SettingState(

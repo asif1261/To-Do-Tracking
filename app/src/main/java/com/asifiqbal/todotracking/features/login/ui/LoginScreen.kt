@@ -39,7 +39,7 @@ import com.asifiqbal.todotracking.foundation.uicomponent.PgButton
 import com.asifiqbal.todotracking.foundation.uicomponent.PgPageLayout
 import com.asifiqbal.todotracking.foundation.uicomponent.PgTextField
 import com.asifiqbal.todotracking.foundation.viewmodel.HandleEffect
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 
 @Composable
 fun LoginScreen(viewModel: LoginViewModel, onNavigateToDashboard: () -> Unit) {

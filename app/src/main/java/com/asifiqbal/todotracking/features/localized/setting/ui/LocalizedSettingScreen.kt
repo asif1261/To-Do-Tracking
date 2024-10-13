@@ -20,7 +20,7 @@ import com.asifiqbal.todotracking.foundation.uicomponent.PgModalBackHeader
 import com.asifiqbal.todotracking.foundation.uicomponent.PgModalCell
 import com.asifiqbal.todotracking.foundation.uicomponent.PgModalLayout
 import com.asifiqbal.todotracking.foundation.viewmodel.HandleEffect
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 
 @Composable
 fun LanguageScreen(

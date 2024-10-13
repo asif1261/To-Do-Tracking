@@ -38,7 +38,7 @@ import com.asifiqbal.todotracking.foundation.uicomponent.PgModalLayout
 import com.asifiqbal.todotracking.foundation.uicomponent.PgModalTitle
 import com.asifiqbal.todotracking.foundation.uicomponent.PgSecondaryButton
 import com.asifiqbal.todotracking.model.GroupIdWithList
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 
 @Composable
 fun UpdateGroupListScreen(

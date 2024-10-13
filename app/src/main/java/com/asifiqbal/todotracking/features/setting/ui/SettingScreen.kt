@@ -13,7 +13,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.asifiqbal.todotracking.foundation.uicomponent.PgModalCell
 import com.asifiqbal.todotracking.foundation.uicomponent.PgModalLayout
 import com.asifiqbal.todotracking.foundation.uicomponent.PgModalTitle
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 
 @Composable
 fun SettingScreen(

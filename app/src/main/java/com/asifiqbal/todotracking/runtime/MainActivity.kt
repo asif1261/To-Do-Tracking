@@ -9,7 +9,7 @@ import com.asifiqbal.todotracking.features.host.ui.Host
 import com.asifiqbal.todotracking.foundation.window.WindowState
 import com.asifiqbal.todotracking.foundation.window.rememberWindowState
 import com.asifiqbal.todotracking.runtime.navigation.MainNavHost
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

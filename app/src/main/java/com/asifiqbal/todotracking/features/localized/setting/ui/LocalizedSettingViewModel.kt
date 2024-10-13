@@ -4,7 +4,7 @@ import androidx.lifecycle.viewModelScope
 import com.asifiqbal.todotracking.features.localized.setting.data.ILocalizedSettingEnvironment
 import com.asifiqbal.todotracking.model.Language
 import com.wisnu.foundation.coreviewmodel.StatefulViewModel
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

@@ -1,7 +1,7 @@
 package com.asifiqbal.todotracking.foundation.extension
 
 import com.asifiqbal.todotracking.model.ToDoRepeat
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 
 fun ToDoRepeat.displayable(): Int {
     return when (this) {

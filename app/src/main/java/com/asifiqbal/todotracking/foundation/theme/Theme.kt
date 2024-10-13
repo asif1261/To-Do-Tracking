@@ -12,9 +12,9 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import com.asifiqbal.todotracking.R
 import com.asifiqbal.todotracking.model.Theme
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
-import com.wisnu.kurniawan.composetodolist.R
 
 val LightColorPalette = lightColorScheme(
     primary = LightPrimary,

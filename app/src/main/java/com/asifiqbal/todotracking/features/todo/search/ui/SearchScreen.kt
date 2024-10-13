@@ -33,7 +33,7 @@ import com.asifiqbal.todotracking.foundation.uicomponent.PgIcon
 import com.asifiqbal.todotracking.foundation.uicomponent.PgPageLayout
 import com.asifiqbal.todotracking.foundation.uicomponent.PgTextField
 import com.asifiqbal.todotracking.model.ToDoTask
-import com.wisnu.kurniawan.composetodolist.R
+import com.asifiqbal.todotracking.R
 
 @Composable
 fun SearchScreen(
