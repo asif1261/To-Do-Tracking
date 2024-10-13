@@ -158,6 +158,9 @@ dependencies {
     implementation libs.androidx.compose.ui
     implementation libs.androidx.compose.widget
 
+    //Graph
+    implementation libs.mp.android.chart
+
     // DATA SUPPORT
     // ROOM
     implementation libs.androidx.room.runtime
